@@ -1,8 +1,8 @@
 ## Welcome to GitHub Pages
 
 - [Markdown](#Markdown)
-- [Jekyll Themes](#Jekyll Themes)
-- [Support or Contact](#Support or Contact)
+- [Jekyll Themes](#Jekyll-Themes)
+- [Support or Contact](#Support-or-Contact)
 
 - [git](_posts/git.md)
 
