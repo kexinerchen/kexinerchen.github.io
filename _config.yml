@@ -4,29 +4,29 @@ title:        Kexiner-Blog
 description:  "Kexiner's learning notes"
 
 author:       Kexiner Chen
-url:          https://github.com/kexinerchen/kexinerchen.github.io
-baseurl:      /kexinerchen.github.io
-permalink:    /:year/:month/:title
-paginate:     3
+#url:          https://github.com/kexinerchen/kexinerchen.github.io
+#baseurl:      /kexinerchen.github.io
+#permalink:    /:year/:month/:title
+#paginate:     3
 
 
-comments:     true
-
-
-
-plugins:
-  - jekyll-feed
-  - jekyll-gist
-  - jekyll-paginate
+#comments:     true
 
 
 
-github:
-  repo:       https://github.com/kexinerchen/kexinerchen.github.io
+#plugins:
+#  - jekyll-feed
+#  - jekyll-gist
+#  - jekyll-paginate
+
+
+
+#github:
+#  repo:       https://github.com/kexinerchen/kexinerchen.github.io
 
 # Custom variables
-owner:        "Kexiner"
-year:         "2020"
+#owner:        "Kexiner"
+#year:         "2020"
 
-markdown: kramdown
-highlighter: pygments
+#markdown: kramdown
+#highlighter: pygments
