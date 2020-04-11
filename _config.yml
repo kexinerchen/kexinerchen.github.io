@@ -3,15 +3,16 @@ theme:        jekyll-theme-hacker
 title:        Kexiner-Blog
 description:  "Kexiner's learning notes"
 url:          https://github.com/kexinerchen/kexinerchen.github.io
-baseurl:      /
-permalink: /:year/:month/:day/:title/
+baseurl:      /kexinerchen.github.io
+permalink: /:year/:month/:title
+paginate: 3
 
 
 author:
   name:       Kexiner Chen
   url:        https://github.com/kexinerchen
 
-paginate:         5
+comments: true
 
 
 
