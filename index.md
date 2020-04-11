@@ -7,6 +7,17 @@
 - [git](_posts/git.md)
 
 
+---
+layout: post
+title:  "Welcome to Jekyll!"
+---
+
+# Welcome
+
+**Hello world**, this is my first Jekyll blog post.
+
+I hope you like it!
+
 
 
 You can use the [editor on GitHub](https://github.com/kexinerchen/kexinerchen.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
