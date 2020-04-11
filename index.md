@@ -4,19 +4,8 @@
 - [Jekyll Themes](#Jekyll-Themes)
 - [Support or Contact](#Support-or-Contact)
 
-- [git](_posts/git.md)
+- [git](https://github.com/kexinerchen/kexinerchen.github.io/_posts/git.md)
 
-
----
-layout: post
-title:  "Welcome to Jekyll!"
----
-
-# Welcome
-
-**Hello world**, this is my first Jekyll blog post.
-
-I hope you like it!
 
 
 
