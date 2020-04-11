@@ -4,7 +4,7 @@
 - [Jekyll Themes](#Jekyll-Themes)
 - [Support or Contact](#Support-or-Contact)
 
-- [git](./blob/master/_posts/git.md)
+- [git](git.md)
 
 
 
