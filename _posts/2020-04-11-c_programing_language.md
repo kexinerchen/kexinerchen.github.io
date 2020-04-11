@@ -129,7 +129,7 @@ label: statement;
 
 
 
-####函數指針傳遞
+#### 函數指針傳遞
 ```
 void swap(int *x, int *y)
 {
