@@ -2,17 +2,15 @@ theme:        jekyll-theme-hacker
 
 title:        Kexiner-Blog
 description:  "Kexiner's learning notes"
+
+author:       Kexiner Chen
 url:          https://github.com/kexinerchen/kexinerchen.github.io
 baseurl:      /kexinerchen.github.io
-permalink: /:year/:month/:title
-paginate: 3
+permalink:    /:year/:month/:title
+paginate:     3
 
 
-author:
-  name:       Kexiner Chen
-  url:        https://github.com/kexinerchen
-
-comments: true
+comments:     true
 
 
 
@@ -31,3 +29,4 @@ owner:        "Kexiner"
 year:         "2020"
 
 markdown: kramdown
+highlighter: pygments
