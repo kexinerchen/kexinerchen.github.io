@@ -72,8 +72,7 @@ int b = (a == 1) ? 20: 30; //如果a==1賦值20,否則賦值30
 
 
 
-
-### 語句
+#### 選擇語句
 ```
 if...else...
 
@@ -91,7 +90,9 @@ switch(expression){
 expression是一個常量表達式,必須時整型或枚舉類型
 如果case語句不包含break,將繼續執行後面的case,直到遇見break才跳出switch
 default用在最後,如果上面所有的case都不爲真時,執行default,default中的break不是必須的
-
+```
+#### 循環語句
+```
 while(condition)
 {
    statement(s);
@@ -116,9 +117,20 @@ goto label;
 ..
 .
 label: statement;
+```
 
 
-函數指針傳遞
+
+
+
+
+
+
+
+
+
+####函數指針傳遞
+```
 void swap(int *x, int *y)
 {
    int temp;
@@ -128,11 +140,7 @@ void swap(int *x, int *y)
    return;
 }
 swap(&a, &b);
-
-
 ```
-
-
 
 
 
