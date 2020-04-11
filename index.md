@@ -6,7 +6,7 @@
 - [Jekyll Themes](#Jekyll-Themes)
 - [Support or Contact](#Support-or-Contact)
 
-- [git](posts/2020-04-11-git.md)
+- [git](_posts/2020-04-11-git.md)
 
 
 
