@@ -4,6 +4,8 @@ title:        Kexiner-Blog
 description:  "Kexiner's learning notes"
 url:          https://github.com/kexinerchen/kexinerchen.github.io
 baseurl:      /
+permalink: /:year/:month/:day/:title/
+
 
 author:
   name:       Kexiner Chen
