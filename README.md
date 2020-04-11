@@ -1,10 +1,8 @@
 
 
-## Welcome to GitHub Pages
+## Welcome to Kexiner's Pages
 
-- [Markdown](#Markdown)
-- [Jekyll Themes](#Jekyll-Themes)
-- [Support or Contact](#Support-or-Contact)
+- [C Language](_posts/2020-04-11-c_programing_language.md)
 
 - [git](_posts/2020-04-11-git.md)
 
