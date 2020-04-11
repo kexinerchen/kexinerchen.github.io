@@ -10,6 +10,8 @@
 
 - [gdb](_posts/2020-04-11-gdb.md)
 
+- [gdb](_posts/2020-04-11-read.md)
+
 
 
 
