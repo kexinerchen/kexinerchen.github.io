@@ -4,7 +4,7 @@ You can use the [editor on GitHub](https://github.com/kexinerchen/kexinerchen.gi
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-[git](_posts/git.md)
+[git](/kexinerchen.github.io/_posts/git.md)
 
 
 ### Markdown
