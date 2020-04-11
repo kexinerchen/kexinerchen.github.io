@@ -1,0 +1,31 @@
+#### Git教程
+
+##### delete multiples files
+
+```
+In the command-line, navigate to your local repository.
+Ensure you are in the default branch:
+$ git checkout master
+The rm -r command will recursively remove your folder:
+$ git rm -r folder-name
+Commit the change:
+$ git commit -m "Remove duplicated directory"
+Push the change to your remote repository:
+$ git push origin master
+```
+
+```
+git本地项目首次推送到远程:
+git init -- 新建一个本地仓库
+git add README.md -- 将README.md文件加入到仓库中
+git commit -m "first commit" -- 将文件commit到本地仓库
+git remote add origin https://github.com/XuDaojie/Lee.git -- 添加远程仓库，origin只是一个远程仓库的别名，可以随意取
+git push -u origin maste
+```
+
+
+
+
+
+
+
