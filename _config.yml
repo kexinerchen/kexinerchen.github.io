@@ -2,28 +2,8 @@ theme: jekyll-theme-hacker
 
 title: Kexiner-Blog
 description: "Kexiner's learning notes"
-author:
-  name: "Kexiner"
-  email: "kexinerchen@gmail.com"
-  url: "https://kexinerchen.github.io/"
 
-baseurl: /
 
-source: .
-destination: ./_site
-permalink: /:title
-paginate: 3
-paginate_path: /page/:num/
-
-defaults:
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-
-future: true
 plugins:
   - jekyll-seo-tag
   - jekyll-paginate
