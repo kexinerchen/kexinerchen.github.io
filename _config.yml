@@ -4,11 +4,6 @@ title: Kexiner-Blog
 description: "Kexiner's learning notes"
 
 
-plugins:
-  - jekyll-seo-tag
-  - jekyll-paginate
-  - jekyll-sitemap
-
 # Custom variables
 owner : "Kexiner"
 year : "2020"
