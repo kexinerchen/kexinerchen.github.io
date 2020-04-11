@@ -4,7 +4,7 @@
 - [Jekyll Themes](#Jekyll-Themes)
 - [Support or Contact](#Support-or-Contact)
 
-- [git](https://github.com/kexinerchen/kexinerchen.github.io/blob/master/_posts/git.md)
+- [git](./blob/master/_posts/git.md)
 
 
 
