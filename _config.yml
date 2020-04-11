@@ -1,12 +1,28 @@
-theme: jekyll-theme-hacker
+theme:        jekyll-theme-hacker
 
-title: Kexiner-Blog
-description: "Kexiner's learning notes"
-url: "https://kexinerchen.github.io/"
+title:        Kexiner-Blog
+description:  "Kexiner's learning notes"
+url:          https://github.com/kexinerchen/kexinerchen.github.io
+baseurl:      /
+
+author:
+  name:       Kexiner Chen
+  url:        https://github.com/kexinerchen
+
+paginate:         5
 
 
 
+plugins:
+  - jekyll-feed
+  - jekyll-gist
+  - jekyll-paginate
+
+
+
+github:
+  repo:       https://github.com/kexinerchen/kexinerchen.github.io
 
 # Custom variables
-owner : "Kexiner"
-year : "2020"
+owner:        "Kexiner"
+year:         "2020"
