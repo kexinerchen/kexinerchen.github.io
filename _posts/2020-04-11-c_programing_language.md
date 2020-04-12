@@ -156,35 +156,94 @@ label: statement;
 ```
 
 
-
 ## 數組,字符串和指針
 ```c
 double a[3] = {1000.0, 3.4, 7.0}; //a是指向數組第一個元素地址&a[0]的指針,a=&a[0],*a=a[0],*(a+1)=a[1]
 int b[2][3] = {0,1,2,3,4,5};    //其中a[1]={0,1,2}
 ```
+### 字符指針,字符數組
+//因爲只有char類型,字符串要用數組來表示
+```c
+char a[][10];   //串最大長度10
+
+char *p = "hello";
+char q[] = "hello";
+printf ("p: %s\n", p);
+printf ("q: %s\n", q);
+//p和q存儲的是一樣的地址,輸出一樣
+//但char指針p的數據沒有分配,不能修改,這兩個使用內存方式不同
+```
+
+
 ### 指針
 算術運算: ++  --  +  -  ==  >  <    
 
 可指向整型,浮點型,字符型,數組,**函數**
 
-指向指針的指針:
+### 指針數組
+存儲指針的數組
+```c
+char *arr[4] = {"hello", "world", "shannxi", "xi'an"};
+//相當於四個指針,每個指針存一個字符串:
+char *p1 = “hello";
+char *p1 = “world”;
+char *p3 = “shannxi”;
+char *p4 = “xi'an”;
 ```
+```c
+#include <stdio.h> 
+const int MAX = 3;
+int main ()
+{
+   int  var[] = {10, 100, 200};
+   int i, *ptr[MAX];
+ 
+   for ( i = 0; i < MAX; i++)
+   {
+      ptr[i] = &var[i]; //賦值地址
+   }
+   for ( i = 0; i < MAX; i++)
+   {
+      printf("Value of var[%d] = %d\n", i, *ptr[i] );
+   }
+   return 0;
+}
+```
+### 數組指針
+```c
+char (*pa)[4];
+char a[4];
+//pa是一個指針,指向一個char[4]數組,每個數組元素是一個char類型的變量
+//a是數組首地址,pa是指向數組的指針
+```
+
+
+### 指向指針的指針
+```c
 int var=300, *ptr, **pptr;
 ptr=&var;
 pptr=&ptr;
+//var = *ptr = **pptr
 ```
-
-
-
-### 字符串
-//因爲只有char類型,字符串要用數組來表示
+### 傳遞指針/數組給函數
 ```c
-char a[][10];   //串最大長度10
-char *a[];  //字符數組指針,可存任意大小字符串,a[0]即第一個串的內容
-
+#include <stdio.h>
+#include <time.h>
+void getSeconds(unsigned long *par);
+int main ()
+{
+   unsigned long sec;
+   getSeconds( &sec );  //sec的地址&sec傳給getSeconds
+   printf("Number of seconds: %ld\n", sec );
+   return 0;
+}
+//par = &sec, *par=sec
+void getSeconds(unsigned long *par)
+{
+   *par = time( NULL ); //當前秒數
+   return;
+}
 ```
-
-### 傳遞數組(指針)給函數
 ```c
 void Func(int *param){}     //形參是指針
 void Func(int param[10]){}  //形參是已知大小的數組
@@ -201,7 +260,7 @@ void swap(int *x, int *y)
 }
 swap(&a, &b);
 ```
-### 從函數返回數組
+### 從函數返回指針/數組
 //C語言不允許返回一個完整的數組,但可以通過返回不帶索引的數組名來返回一個指向數組的指針
 //另外C不支持在函數外返回局部變量的地址,除非定義局部變量爲static變量
 ```c
@@ -235,6 +294,17 @@ int main ()
    return 0;
 }
 ```
+
+
+## 指針數組的參數傳遞
+
+
+
+## 函數指針
+
+
+
+## 指針函數
 
 
 
