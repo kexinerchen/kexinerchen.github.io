@@ -200,6 +200,7 @@ printf ("q: %s\n", q);
 ### 指針數組
 存儲指針的數組
 ```c
+//存儲char指針的數組
 char *arr[4] = {"hello", "world", "shannxi", "xi\'an"};
 //相當於四個指針,每個指針存一個字符串:
 char *p1 = "hello";
@@ -213,6 +214,7 @@ const int MAX = 3;
 int main ()
 {
    int  var[] = {10, 100, 200};
+   //存儲int指針的數組
    int i, *ptr[MAX];
  
    for ( i = 0; i < MAX; i++)
