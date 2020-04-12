@@ -200,12 +200,12 @@ printf ("q: %s\n", q);
 ### 指針數組
 存儲指針的數組
 ```c
-char *arr[4] = {"hello", "world", "shannxi", "xian"};
+char *arr[4] = {"hello", "world", "shannxi", "xi\'an"};
 //相當於四個指針,每個指針存一個字符串:
 char *p1 = "hello";
 char *p1 = "world";
 char *p3 = "shannxi";
-char *p4 = "xian";
+char *p4 = "xi\'an";
 ```
 ```c
 #include <stdio.h> 
