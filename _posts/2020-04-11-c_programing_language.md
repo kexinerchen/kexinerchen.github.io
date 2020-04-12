@@ -5,16 +5,15 @@ author: kexiner
 
 ---
 
+---
 
 ```shell
 $ gcc addtwonum.c test.c -o main
 $ ./main
 
-
 ```
 
-______
-
+<br>
 
 ### Basics
 
@@ -45,8 +44,6 @@ int i;          //聲明,也是定義
 <br>
 <br>
 <br>
-<br>
-<br><br>
 
 
 ### 枚舉類型
@@ -93,8 +90,9 @@ int main()
 //第一個元素默認爲0,spring=0,不連續,沒有指定值的元素,其值爲前一元素加1
 enum season {spring, summer=3, autumn, winter};
 
-
 ```
+<br>
+<br>
 
 
 ### 運算符
@@ -112,8 +110,10 @@ int b = (a == 1) ? 20: 30; //如果a==1賦值20,否則賦值30
 <<: 左邊的丟棄,右邊的補0
 >>: 正數左邊補0,負數左邊補1,右邊丟棄
 
-
 ```
+<br>
+<br>
+
 
 ### 選擇語句
 ```c
@@ -134,8 +134,9 @@ switch(expression){
 //如果case語句不包含break,將繼續執行後面的case,直到遇見break才跳出switch
 //default用在最後,如果上面所有的case都不爲真時,執行default,default中的break不是必須的
 
-
 ```
+<br>
+<br>
 
 ### 循環語句
 ```c
@@ -165,10 +166,11 @@ goto label;
 .
 label: statement;
 
-
-
-
 ```
+<br>
+<br>
+<br>
+<br>
 
 
 ## 數組,字符串和指針
@@ -188,7 +190,8 @@ printf ("q: %s\n", q);
 //p和q存儲的是一樣的地址,輸出一樣
 //但char指針p的數據沒有分配,不能修改,這兩個使用內存方式不同
 ```
-
+<br>
+<br>
 
 ### 指針
 算術運算: ++  --  +  -  ==  >  <    
@@ -225,6 +228,8 @@ int main ()
 }
 
 ```
+<br>
+<br>
 
 ### 數組指針
 ```c
@@ -234,7 +239,8 @@ char a[4];
 //a是數組首地址,pa是指向數組的指針
 
 ```
-
+<br>
+<br>
 
 ### 指向指針的指針
 ```c
@@ -244,6 +250,8 @@ pptr=&ptr;
 //var = *ptr = **pptr
 
 ```
+<br>
+
 ### 傳遞指針/數組給函數
 ```c
 #include <stdio.h>
@@ -280,6 +288,8 @@ void swap(int *x, int *y)
 swap(&a, &b);
 
 ```
+<br>
+<br>
 
 ### 從函數返回指針/數組
 //C語言不允許返回一個完整的數組,但可以通過返回不帶索引的數組名來返回一個指向數組的指針
@@ -315,9 +325,11 @@ int main ()
    return 0;
 }
 
-
-
 ```
+<br>
+<br>
+<br>
+<br>
 
 
 ## 指針數組的參數傳遞
