@@ -41,7 +41,7 @@ int i;          //聲明,也是定義
 定義只能賦予一些離散整數值的變量
 enum　枚举名　{枚举元素1,枚举元素2,……};
 #### 先定义枚举类型，再定义枚举变量
-```
+```c
 enum DAY
 {
       MON=1, TUE, WED, THU, FRI, SAT, SUN
@@ -49,20 +49,20 @@ enum DAY
 enum DAY day;
 ```
 #### 定义枚举类型的同时定义枚举变量
-```
+```c
 enum DAY
 {
       MON=1, TUE, WED, THU, FRI, SAT, SUN
 } day;
 ```
 #### 省略枚举名称，直接定义枚举变量
-```
+```c
 enum
 {
       MON=1, TUE, WED, THU, FRI, SAT, SUN
 } day;
 ```
-```
+```c
 #include<stdio.h>
 enum DAY
 {
@@ -77,7 +77,7 @@ int main()
     }
 }
 ```
-```
+```c
 //第一個元素默認爲0,spring=0,不連續,沒有指定值的元素,其值爲前一元素加1
 enum season {spring, summer=3, autumn, winter};
 ```
@@ -144,7 +144,7 @@ do
 
 }while( condition );
 ```
-```
+```c
 break; //終止循環或者switch語句
 continue; //終止本次循環,開始下次循環迭代
 goto;//無條件轉移到被標記語句
@@ -159,7 +159,7 @@ label: statement;
 
 ## 數組,字符串和指針
 
-```
+```c
 double a[3] = {1000.0, 3.4, 7.0}; //a是指向數組第一個元素地址&a[0]的指針,a=&a[0],*a=a[0],*(a+1)=a[1]
 int b[2][3] = {0,1,2,3,4,5};    //其中a[1]={0,1,2}
 ```
@@ -168,19 +168,19 @@ int b[2][3] = {0,1,2,3,4,5};    //其中a[1]={0,1,2}
 
 ### 字符串
 //因爲只有char類型,字符串要用數組來表示
-```
+```c
 char a[][10];   //串最大長度10
 char *a[];  //字符數組指針,可存任意大小字符串
 
 ```
 
 ### 傳遞數組(指針)給函數
-```
+```c
 void Func(int *param){}     //形參是指針
 void Func(int param[10]){}  //形參是已知大小的數組
 void Func(int param[]){}    //形參是未知大小的數組
 ```
-```
+```c
 void swap(int *x, int *y)
 {
    int temp;
@@ -194,7 +194,7 @@ swap(&a, &b);
 ### 從函數返回數組
 //C語言不允許返回一個完整的數組,但可以通過返回不帶索引的數組名來返回一個指向數組的指針
 //另外C不支持在函數外返回局部變量的地址,除非定義局部變量爲static變量
-```
+```c
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
