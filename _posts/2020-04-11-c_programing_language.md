@@ -82,7 +82,7 @@ switch(expression){
 //default用在最後,如果上面所有的case都不爲真時,執行default,default中的break不是必須的
 ```
 
-#### 循環語句
+### 循環語句
 ```c
 while(condition)
 {
@@ -99,7 +99,8 @@ do
    statement(s);
 
 }while( condition );
-
+```
+```
 break; //終止循環或者switch語句
 continue; //終止本次循環,開始下次循環迭代
 goto;//無條件轉移到被標記語句
