@@ -1,8 +1,10 @@
 
 
 ## Welcome to Kexiner's Pages
+![reading](https://raw.githubusercontent.com/kexinerchen/kexinerchen.github.io/master/_posts/assets/reading.png)
 
-- [C Language](_posts/2020-04-11-c_programing_language.md)
+
+- [C Programing Language](_posts/2020-04-11-c_programing_language.md)
 
 - [git](_posts/2020-04-11-git.md)
 
