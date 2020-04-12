@@ -29,5 +29,5 @@ author:       Kexiner Chen
 #owner:        "Kexiner"
 #year:         "2020"
 
-#markdown: kramdown
+markdown: kramdown
 #highlighter: pygments
