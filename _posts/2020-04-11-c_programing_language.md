@@ -15,6 +15,7 @@ $ gcc addtwonum.c test.c -o main
 $ ./main
 
 ```
+---
 
 <br>
 
