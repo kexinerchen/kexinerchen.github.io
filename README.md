@@ -1,7 +1,7 @@
 
 
 ## Welcome to Kexiner's Pages
-![reading](https://raw.githubusercontent.com/kexinerchen/kexinerchen.github.io/master/_posts/assets/reading.png)
+![reading](https://raw.githubusercontent.com/kexinerchen/kexinerchen.github.io/master/_posts/assets/reading.jpg)
 
 
 - [C Programing Language](_posts/2020-04-11-c_programing_language.md)
