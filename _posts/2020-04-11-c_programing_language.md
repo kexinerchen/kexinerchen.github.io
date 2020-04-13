@@ -454,11 +454,88 @@ enum season {spring, summer=3, autumn, winter};
 
 
 ## 結構體和共用體
+結構體允許存儲不同類型的數據項
+```c
+struct tag { 
+    member-list
+    member-list 
+    member-list  
+    ...
+} variable-list ;
+```
+結構體的成員可以是其他的結構體
+```c
+struct COMPLEX
+{
+    char string[100];
+    struct SIMPLE a;
+};
+```
+成員可以包含指向自己的結構體,通常爲了實現高級數據結構,如鏈表,樹
+```c
+struct NODE
+{
+    char string[100];
+    struct NODE *next_node;
+};
+
+```
+兩個結構體互相包含
+```c
+struct B;    //對結構體B進行不完整聲明
+struct A
+{
+    struct B *partner;
+    //other members;
+};
+struct B
+{
+    struct A *partner;
+    //other members;
+};
+
+```
+結構體變量的初始化和成員訪問
+```c
+struct Books
+{
+   char  title[50];
+   char  author[50];
+   char  subject[100];
+   int   book_id;
+} book = {"C Language", "RUNOOB", "Programing", 123};
+```
+成员访问运算符是句號 .
+```c
+struct Books Book1;
+strcpy( Book1.title, "C Programming");
+strcpy( Book1.author, "Nuha Ali"); 
+strcpy( Book1.subject, "C Programming Tutorial");
+Book1.book_id = 6495407;
+
+```
+結構體作爲函數參數
+```
+void printBook(struct Books book){}    //定義
+printBook(Book1);   //引用
+```
+定義結構體指針
+```
+struct Books *struct_pointer;
+struct_pointer = &Book1;
+struct_pointer->title;  //結構體指針的成員訪問,運算符 ->
+
+```
+### 位域
+```
+
 ```
 
 
 
-```
+
+
+
 ## 文件讀寫
 ```
 
