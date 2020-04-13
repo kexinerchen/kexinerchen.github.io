@@ -286,7 +286,7 @@ int main ()
 
 
 ## 指針數組的參數傳遞
-```
+```c
 //指針數組在主函數傳參中, argc確定傳入參數個數, argv是傳入參數的地址
 int main(int argc, char *argv[])
 
@@ -294,7 +294,7 @@ int main(int argc, char *argv[])
 void fun(char **pp);//子函数中的形参
 fun(char *p[]);//主函数中的实参
 ```
-```
+```c
 #include <stdio.h>
 #include <string.h>
 //冒泡法
@@ -335,7 +335,7 @@ int main ()
 
 ## 函數指針,回調函數
 函數指針是指向函數的指針
-```
+```c
 #include <stdio.h>
 int max(int x, int y)
 {
@@ -390,11 +390,11 @@ int main(void)
 
 ## 指針函數
 **指針函數**, \*的优先级低于(), 也就意味着,pfun是个函数,返回值爲整型指針的函數
-```
+```c
 int *pfun(int, int);
 ```
 **函數指針**, pfun是個指針,指向返回值爲整型函數的指針
-```
+```c
 int (*pfun)(int, int);
 
 ```
