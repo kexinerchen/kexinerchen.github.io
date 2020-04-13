@@ -7,7 +7,7 @@ author: kexiner
 
 
 ```shell
-$ gcc addtwonum.c test.c -o main
+$ gcc test.c -o main
 $ ./main
 
 ```
@@ -41,55 +41,6 @@ int i;          //聲明,也是定義
 ```
 
 <br>
-<br>
-<br>
-
-
-### 枚舉類型
-定義只能賦予一些離散整數值的變量
-enum　枚举名　{枚举元素1,枚举元素2,……};
-#### 先定义枚举类型，再定义枚举变量
-```c
-enum DAY
-{
-      MON=1, TUE, WED, THU, FRI, SAT, SUN
-};
-enum DAY day;
-```
-#### 定义枚举类型的同时定义枚举变量
-```c
-enum DAY
-{
-      MON=1, TUE, WED, THU, FRI, SAT, SUN
-} day;
-```
-#### 省略枚举名称，直接定义枚举变量
-```c
-enum
-{
-      MON=1, TUE, WED, THU, FRI, SAT, SUN
-} day;
-```
-```c
-#include<stdio.h>
-enum DAY
-{
-      MON=1, TUE, WED, THU, FRI, SAT, SUN
-};
-int main()
-{
-    enum DAY day;
-    // DAY連續,遍歷枚舉元素
-    for (day = MON; day <= SUN; day++) {
-        printf("枚舉元素：%d \n", day);
-    }
-}
-```
-```c
-//第一個元素默認爲0,spring=0,不連續,沒有指定值的元素,其值爲前一元素加1
-enum season {spring, summer=3, autumn, winter};
-
-```
 <br>
 <br>
 
@@ -238,6 +189,7 @@ char (*pa)[4];
 char a[4];
 //pa是一個指針,指向一個char[4]數組,每個數組元素是一個char類型的變量
 //a是數組首地址,pa是指向數組的指針
+//可以使用*(a+1)訪問a[1]
 
 ```
 <br>
@@ -335,25 +287,172 @@ int main ()
 
 ## 指針數組的參數傳遞
 ```
+//指針數組在主函數傳參中, argc確定傳入參數個數, argv是傳入參數的地址
+int main(int argc, char *argv[])
 
+//子函數傳參中,傳遞的是指針數組的地址,
+void fun(char **pp);//子函数中的形参
+fun(char *p[]);//主函数中的实参
+```
+```
+#include <stdio.h>
+#include <string.h>
+//冒泡法
+void sort(char **pa, int n)
+{
+    int i, j;
+    char *tmp = NULL;
+
+    for(i = 0; i < n-1; i++){
+        for(j = 0; j < n-1-i; j++){
+            if((strcmp(*(pa+j), *(pa+j+1))) > 0){
+                tmp = *(pa + j);
+                *(pa + j) = *(pa + j + 1);
+                *(pa + j + 1) = tmp;
+            }
+        }
+    }
+}
+
+int main ()
+{
+    char *pa[4] = {"abc", "xyz", "opq", "ijk"};
+    int i;
+    sort(pa,4);
+    for(i=0;i<4;i++){
+    printf("%s\n", pa[i] );
+    }
+    return 0;
+}
 
 ```
 
 
-## 函數指針
-```
+<br>
+<br>
+<br>
 
 
+## 函數指針,回調函數
+函數指針是指向函數的指針
 ```
+#include <stdio.h>
+int max(int x, int y)
+{
+    return x > y ? x : y;
+}
+int main(void)
+{
+    int (* p)(int, int) = & max; // &可以省略
+    int a, b, c, d;
+    printf("please input 3 numbers:");
+    scanf("%d %d %d", & a, & b, & c);
+ 
+    d = p(p(a, b), c); // same as call function max
+    printf("max number is: %d\n", d); 
+    return 0;
+}
+
+```
+回調函數是函数指针作为某个函数的参数
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+// size_t: stdlib中定義的无符号整型
+void populateArray(int *array, size_t arraySize, int (*getNextValue)(void))
+{
+    for (size_t i=0; i<arraySize; i++){
+        array[i] = getNextValue();
+    }
+} 
+int getNextRandomValue(void)
+{
+    return rand();
+}
+
+int main(void)
+{
+    int myarray[10];
+    populateArray(myarray, 10, getNextRandomValue);
+    for(int i = 0; i < 10; i++) {
+        printf("%d ", myarray[i]);
+    }
+    printf("\n");
+    return 0;
+}
+
+```
+<br>
+<br>
+<br>
 
 
 ## 指針函數
-```
-
-
 
 ```
+// 指針函數
+// *的优先级低于(), 也就意味着，pfun是个函数, 返回值爲整型指針的函數
+int *pfun(int, int);
+```
+```
+// 函數指針
+// pfun是個指針,指向返回值爲整型函數的指針
+int (*pfun)(int, int);
 
+```
+
+<br>
+<br>
+<br>
+
+
+
+### 枚舉類型
+定義只能賦予一些離散整數值的變量
+enum　枚举名　{枚举元素1,枚举元素2,……};
+#### 先定义枚举类型，再定义枚举变量
+```c
+enum DAY
+{
+      MON=1, TUE, WED, THU, FRI, SAT, SUN
+};
+enum DAY day;
+```
+#### 定义枚举类型的同时定义枚举变量
+```c
+enum DAY
+{
+      MON=1, TUE, WED, THU, FRI, SAT, SUN
+} day;
+```
+#### 省略枚举名称，直接定义枚举变量
+```c
+enum
+{
+      MON=1, TUE, WED, THU, FRI, SAT, SUN
+} day;
+```
+```c
+#include<stdio.h>
+enum DAY
+{
+      MON=1, TUE, WED, THU, FRI, SAT, SUN
+};
+int main()
+{
+    enum DAY day;
+    // DAY連續,遍歷枚舉元素
+    for (day = MON; day <= SUN; day++) {
+        printf("枚舉元素：%d \n", day);
+    }
+}
+```
+```c
+//第一個元素默認爲0,spring=0,不連續,沒有指定值的元素,其值爲前一元素加1
+enum season {spring, summer=3, autumn, winter};
+
+```
 
 
 
@@ -371,7 +470,13 @@ int main ()
 
 ```
 
+<br>
+<br>
+<br>
 
+
+聲明:本文內容主要總結自runoob.com
+<br>
 
 
 
