@@ -15,7 +15,7 @@ $ ./main
 
 <br>
 
-### Basics
+## Basics
 
 字符型常量,單引號: 'a', 'b'
 
