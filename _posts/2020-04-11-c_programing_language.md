@@ -723,6 +723,7 @@ int main( )
 ```
 <br>
 ### 訪問底層(存儲設備上的文件)
+
 ```c
 FILE *fopen( const char * filename, const char * mode );
 //fopen()用來創建或者讀取文件, 有r w a r+ w+ a+等多種模式
