@@ -11,15 +11,15 @@ author: kexiner
 
 <br>
 
-- [數組, 指針, 函數傳遞](https://raw.githubusercontent.com/kexinerchen/kexinerchen.github.io/master/_posts/c_language02.md)
+- [數組, 指針, 函數傳遞](https://github.com/kexinerchen/kexinerchen.github.io/blob/master/c_language02.md)
 
 <br>
 
-- [枚舉, 結構體, 共用體](https://raw.githubusercontent.com/kexinerchen/kexinerchen.github.io/master/_posts/c_language03.md)
+- [枚舉, 結構體, 共用體](https://github.com/kexinerchen/kexinerchen.github.io/blob/master/_posts/c_language03.md)
 
 <br>
 
-- [文件讀寫, 預處理器](c_language04.md)
+- [文件讀寫, 預處理器](./c_language04.md)
 
 
 
