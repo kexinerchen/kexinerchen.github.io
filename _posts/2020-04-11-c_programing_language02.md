@@ -6,7 +6,6 @@ author: kexiner
 ---
 
 <br>
-<br>
 
 
 ## 數組,字符串和指針
