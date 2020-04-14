@@ -29,7 +29,51 @@ Lvalues和Rvalues: 變量是Lvalues,數值型的字面值是Rvalues,不能出現
 
 定義常量: 預處理器(#define a 100),      const關鍵字(const int a=10)        typeof,取別名
 
-C存儲類: 定義C中變量/函數的範圍(可見性)和生命週期
+<br>
+<br>
+
+#### typedef: 取別名
+typedef 僅限於爲類型定義別名
+**#define** 不僅可以爲類型取別名, 還可以爲數值定義別名,比如可以定義1爲ONE
+type 由編譯器解釋
+**#define** 由預編譯器進行處理
+
+
+```c
+typedef unsigned char BYTE;
+```
+```c
+#include <stdio.h>
+#include <string.h>
+ 
+typedef struct Books
+{
+   char  title[50];
+   char  author[50];
+   char  subject[100];
+   int   book_id;
+} Book;
+ 
+int main( )
+{
+   Book book; 
+   strcpy( book.title, "C Programing Language");
+   strcpy( book.author, "Runoob"); 
+   strcpy( book.subject, "Programing");
+   book.book_id = 12345;
+ 
+   printf( "Title : %s\n", book.title);
+   printf( "Author : %s\n", book.author);
+   printf( "Subject : %s\n", book.subject);
+   printf( "Book ID : %d\n", book.book_id);
+ 
+   return 0;
+}
+
+```
+<br>
+
+#### C存儲類: 定義C中變量/函數的範圍(可見性)和生命週期
 ```c
 auto: //所有局部變量默認的,只能用在函數內修飾局部變量
 register: //存儲在寄存器中的局部變量,可快速訪問
@@ -405,7 +449,7 @@ int (*pfun)(int, int);
 
 
 
-### 枚舉類型
+## 枚舉類型
 定義只能賦予一些離散整數值的變量
 enum　枚举名　{枚举元素1,枚举元素2,……};
 #### 先定义枚举类型，再定义枚举变量
@@ -451,6 +495,9 @@ enum season {spring, summer=3, autumn, winter};
 
 ```
 
+<br>
+<br>
+<br>
 
 
 ## 結構體和共用體
@@ -515,24 +562,112 @@ Book1.book_id = 6495407;
 
 ```
 結構體作爲函數參數
-```
+```c
 void printBook(struct Books book){}    //定義
 printBook(Book1);   //引用
 ```
 定義結構體指針
-```
+```c
 struct Books *struct_pointer;
 struct_pointer = &Book1;
 struct_pointer->title;  //結構體指針的成員訪問,運算符 ->
 
 ```
+
 ### 位域
+位域是指把字節中的二進制位劃分爲幾個不同的區域,位域不允許跨兩個字節
+例如用1位二進制位存放開關變量,只有0和1兩種狀態
+```c
+struct bs{
+    int a:8;
+    int b:2;
+    int c:6;
+}data;
+//data是bs變量,共兩個字節,其中位域a佔8位,b佔2位,c佔6位
+```
+位域可以是無名位域,只用來填充或調整位置,不能引用
+```c
+struct k{
+    int a:1;
+    int  :2;  //無名位域
+    int b:3;
+    int c:2;
+};
+
+```
+位域的使用和結構體的使用相同
+```c
+main(){
+    struct bs{
+        unsigned a:1;
+        unsigned b:3;
+        unsigned c:4;
+    } bit,*pbit;
+
+    bit.a=1;    //賦值不能超過該位域的允許範圍, a最大爲1
+    bit.b=7;    
+    bit.c=15;   
+    printf("%d,%d,%d\n",bit.a,bit.b,bit.c);
+    pbit=&bit;    //把位域bitde地址賦予位域指針變量
+    pbit->a=0;    //用指針方式對a重新賦值
+    pbit->b&=3;    // 複合運算符,相當於pbit->b=pbit->b&3, 7與3按位與運(111&011=011)
+    pbit->c|=1;    //按位或,pbit->c=pbit->c|1, 結果爲15 
+    printf("%d,%d,%d\n",pbit->a,pbit->b,pbit->c);
+}
 ```
 
+<br>
+
+### 共用體
+允許在相同的內存位置存儲不同的數據類型
+共用體佔用的內存是存儲最大成員所需的內存
+```c
+union [union tag]
+{
+   member definition;
+   member definition;
+   ...
+   member definition;
+} [one or more union variables];
+```
+```c
+#include <stdio.h>
+#include <string.h>
+ 
+union Data
+{
+   int i;
+   float f;
+   char  str[20];
+};
+ 
+int main( )
+{
+   union Data data;        
+ 
+   data.i = 10;
+   data.f = 220.5;
+   strcpy( data.str, "C Programming");
+ 
+   printf( "data.i : %d\n", data.i);
+   printf( "data.f : %f\n", data.f);
+   printf( "data.str : %s\n", data.str);
+ 
+   return 0;
+}
+
+output:
+data.i : 1917853763
+data.f : 4122360580327794860452759994368.000000
+data.str : C Programming
+//因str佔用了位置,i和f的值損壞
 ```
 
 
 
+<br>
+<br>
+<br>
 
 
 
