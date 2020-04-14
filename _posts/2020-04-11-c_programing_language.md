@@ -33,13 +33,9 @@ Lvalues和Rvalues: 變量是Lvalues,數值型的字面值是Rvalues,不能出現
 <br>
 
 #### typedef: 取別名
-typedef 僅限於爲類型定義別名
+typedef 僅限於爲類型定義別名, 由編譯器解釋
 
-**#define** 不僅可以爲類型取別名, 還可以爲數值定義別名,比如可以定義1爲ONE
-
-type 由編譯器解釋
-
-**#define** 由預編譯器進行處理
+**#define** 不僅可以爲類型取別名, 還可以爲數值定義別名,比如可以定義1爲ONE, 由預編譯器進行處理
 
 
 ```c
