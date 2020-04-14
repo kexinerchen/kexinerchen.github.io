@@ -7,7 +7,7 @@ author: kexiner
 <br>
 <br>
 
-- [Basics, 運算符, 語句](/_posts/c_language01.md)
+- [Basics, 運算符, 語句](/_posts/2020-04-11-c_programing_language01.md)
 
 <br>
 
@@ -19,7 +19,7 @@ author: kexiner
 
 <br>
 
-- [文件讀寫, 預處理器](./c_language04.md)
+- [文件讀寫, 預處理器](./2020-04-11-c_programing_language04.md)
 
 
 
