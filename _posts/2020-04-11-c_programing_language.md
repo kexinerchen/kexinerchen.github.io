@@ -7,7 +7,7 @@ author: kexiner
 <br>
 <br>
 
-- [Basics, 運算符, 語句](/language01.md)
+- [Basics, 運算符, 語句](/c_language01.md)
 
 <br>
 
