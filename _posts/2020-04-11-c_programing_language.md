@@ -660,17 +660,14 @@ data.i : 1917853763
 data.f : 4122360580327794860452759994368.000000
 data.str : C Programming
 //因str佔用了位置,i和f的值損壞
+
 ```
-
-
-
 <br>
 <br>
 <br>
-
-
 
 ## 文件讀寫
+<span style="color:#ff8000">C語言把所有設備當做文件</span>.
 ```
 
 
