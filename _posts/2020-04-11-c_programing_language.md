@@ -27,7 +27,7 @@ Lvalues和Rvalues: 變量是Lvalues,數值型的字面值是Rvalues,不能出現
 
 八進制(零開頭): 021       十六進制: 0x46      帶符號的指數由e或E引入: 314159E-5L
 
-定義常量: 預處理器(#define a 100),      const關鍵字(const int a=10)        typeof,取別名
+定義常量: 預處理器(#define a 100),      const關鍵字(const int a=10)        typeof返回類型
 
 <br>
 <br>
