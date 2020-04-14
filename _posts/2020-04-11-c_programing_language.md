@@ -15,7 +15,7 @@ author: kexiner
 
 <br>
 
-- <a href="./c_language03.md">枚舉, 結構體, 共用體</a>
+- <a href="/_posts/c_language03.md">枚舉, 結構體, 共用體</a>
 
 
 <br>
