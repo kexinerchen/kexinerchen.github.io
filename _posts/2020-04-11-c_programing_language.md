@@ -15,7 +15,7 @@ author: kexiner
 
 <br>
 
-- [枚舉, 結構體, 共用體](https://kexinerchen.github.io/2020/04/11/c_programing_language03.html
+- [枚舉, 結構體, 共用體](https://kexinerchen.github.io/2020/04/11/c_programing_language03.html)
 
 
 <br>
