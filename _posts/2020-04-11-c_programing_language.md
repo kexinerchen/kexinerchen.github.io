@@ -11,7 +11,7 @@ author: kexiner
 
 <br>
 
-- [數組, 指針, 函數傳遞](/_posts/c_language02.md)
+- [數組, 指針, 函數傳遞](https://kexinerchen.github.io/2020/04/11/c_language01.html)
 
 <br>
 
