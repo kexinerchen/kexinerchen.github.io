@@ -7,7 +7,7 @@ author: kexiner
 <br>
 <br>
 
-- [Basics, 運算符, 語句](https://kexinerchen.github.io/2020/04/11/c_programing_language01.md)
+- [Basics, 運算符, 語句](https://kexinerchen.github.io/2020/04/11/c_programing_language01.html)
 
 <br>
 
