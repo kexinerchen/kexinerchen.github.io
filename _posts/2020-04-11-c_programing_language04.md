@@ -1,3 +1,11 @@
+---
+layout: post
+title: C Programing Language
+author: kexiner
+
+---
+<br>
+
 
 ## 文件讀寫
 <span style="color:#ff8000"> C語言把所有設備當做文件,文件指針是訪問文件的方式 </span>
