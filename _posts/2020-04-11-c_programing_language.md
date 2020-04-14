@@ -19,7 +19,7 @@ author: kexiner
 
 <br>
 
-- [文件讀寫, 預處理器](/2020-04-11-c_programing_language04.md)
+- [文件讀寫, 預處理器](2020-04-11-c_programing_language04.md)
 
 
 
