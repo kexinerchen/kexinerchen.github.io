@@ -722,6 +722,7 @@ int main( )
 
 ```
 <br>
+
 ### 訪問底層(存儲設備上的文件)
 
 ```c
@@ -748,6 +749,7 @@ char *fgets( char *buf, int n, FILE *fp );
 
 ```
 <br>
+
 ```c
 #include <stdio.h>
 int main()
