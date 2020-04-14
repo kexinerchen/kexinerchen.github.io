@@ -705,7 +705,7 @@ char *gets(char *s)
 //從stdin讀取一行到s所指向的緩衝區,直到遇到終止符
 
 int puts(const char *s)
-把字符串s和一個尾隨的換行符寫入到stdout
+//把字符串s和一個尾隨的換行符寫入到stdout
 ```
 ```c
 #include <stdio.h>
@@ -729,13 +729,15 @@ FILE *fopen( const char * filename, const char * mode );
 
 int fclose( FILE *fp );
 //fclose()返回0表示成功,返回EOF表示發生錯誤. EOF是一個定義在stdio.h中的常量
-
+```
+```c
 int fputc( int c, FILE *fp );
 //fputc()把參數c的字符值寫入到fp所指的輸入流中, 成功則返回寫入的字符, 發生錯誤則返回EOF
 
 int fgetc( FILE * fp );
 //fgetc()從fp所指向的輸入文件中讀取一個字符, 
-
+```
+```c
 int fputs( const char *s, FILE *fp );
 //fputs()把一個以null結尾的字符串s寫入到fp所指的輸入流中, 成功返回非負值, 發生錯誤返回EOF
 
