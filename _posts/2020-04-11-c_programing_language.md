@@ -7,11 +7,11 @@ author: kexiner
 <br>
 <br>
 
-- [Basics, 運算符, 語句](/_posts/2020-04-11-c_programing_language01.md)
+- [Basics, 運算符, 語句](https://github.com/kexinerchen/kexinerchen.github.io/blob/master/_posts/2020-04-11-c_programing_language01.md)
 
 <br>
 
-- [數組, 指針, 函數傳遞](/_posts/2020-04-11-c_programing_language02.md)
+- [數組, 指針, 函數傳遞](https://github.com/kexinerchen/kexinerchen.github.io/blob/master/_posts/2020-04-11-c_programing_language02.md)
 
 <br>
 
