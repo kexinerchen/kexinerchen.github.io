@@ -687,7 +687,7 @@ data.str : C Programming
 <br>
 
 
-聲明:本文內容主要總結自runoob.com
+聲明:本文內容主要總結自runoob.com, 僅供學習使用
 <br>
 
 
