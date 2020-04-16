@@ -1,5 +1,8 @@
 title: Kexiner's Blog
 description: 未經審視的生活是不值得過的  &emsp;  ----蘇格拉底
-show_downloads: true
-google_analytics:
 theme: jekyll-theme-midnight
+
+
+plugins: # <https://jekyllrb.com/docs/plugins/>
+  - jekyll-readme-index # 使用readme做index，从而和github渲染效果一致
+  - jekyll-default-layout # 为每个markdown自动生成layout
