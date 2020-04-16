@@ -7,7 +7,7 @@ author: Kexiner
 <br>
 <br>
 
-<span style="color:#ff8000"> 未經審視的生活是不值得過的.  </span>    ----蘇格拉底
+<span style="color:#ff8000"> 未經審視的生活是不值得過的.</span>  &emsp;  ----蘇格拉底
 
 
 概念賦予經驗以形式,並使明確表達成爲可能.
