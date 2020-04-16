@@ -1,6 +1,6 @@
 ---
 layout: post
-title: the Big Quentions
+title: The Big Quentions
 author: Kexiner
 
 ---
