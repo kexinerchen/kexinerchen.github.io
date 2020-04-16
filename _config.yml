@@ -6,3 +6,10 @@ theme: jekyll-theme-midnight
 plugins: # <https://jekyllrb.com/docs/plugins/>
   - jekyll-readme-index # 使用readme做index，从而和github渲染效果一致
   - jekyll-default-layout # 为每个markdown自动生成layout
+readme_index: # 缺失index.md和index.html时，使用README.md代替之
+
+
+markdown: kramdown
+
+
+
