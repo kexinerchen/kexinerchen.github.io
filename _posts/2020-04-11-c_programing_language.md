@@ -1,7 +1,7 @@
 ---
 layout: post
 title: C Programing Language
-author: kexiner
+author: Kexiner
 
 ---
 <br>
