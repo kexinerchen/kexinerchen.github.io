@@ -1,33 +1,5 @@
-theme:        jekyll-theme-hacker
-
-title:        Kexiner's Blog
-description:  "Kexiner's learning notes"
-
-author:       Kexiner Chen
-
-#url:          https://github.com/kexinerchen/kexinerchen.github.io
-#baseurl:      /kexinerchen.github.io
-#permalink:    /:year/:month/:title
-#paginate:     3
-
-
-#comments:     true
-
-
-
-#plugins:
-#  - jekyll-feed
-#  - jekyll-gist
-#  - jekyll-paginate
-
-
-
-#github:
-#  repo:       https://github.com/kexinerchen/kexinerchen.github.io
-
-# Custom variables
-#owner:        "Kexiner"
-#year:         "2020"
-
-#markdown: kramdown
-#highlighter: pygments
+title: Midnight theme
+description: Midnight is a theme for GitHub Pages.
+show_downloads: true
+google_analytics:
+theme: jekyll-theme-midnight
