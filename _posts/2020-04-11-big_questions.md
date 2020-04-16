@@ -1,7 +1,7 @@
 ---
 layout: post
 title: the Big Quentions
-author: kexiner
+author: Kexiner
 
 ---
 <br>
