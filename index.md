@@ -8,7 +8,7 @@
 
 - [C Programing Language](_posts/2020-04-11-c_programing_language.md)
 
-- [The Big Questions](_posts/2020-04-11-big_questions.md)
+- [The Big Questions](_posts/2020-04-15-big_questions.md)
 
 - [git](_posts/2020-04-11-git.md)
 

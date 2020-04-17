@@ -146,4 +146,58 @@ size_t fwrite(const void *ptr, size_t size_of_elements,
 <br>
 
 ## 預處理器
+c預處理器是個文本替換工具,在實際編譯之前進行. 所有的預處理器命令都以<span style="color:#ff8000"> #開頭<span>
+```c
+#define     \\定義宏
+#include    \\包含源代碼文件
+#undef      \\取消已定義的宏
+#ifdef      \\如果宏已經定義,則返回真
+#ifndef     \\如果宏沒有定義,則返回真
+#if         \\如果條件爲真,編譯下面代碼
+#else       
+#elif       
+#endif      \\結束一個#if...#else...條件編譯塊
+#error      遇到標準錯誤時,輸出錯誤信息
+#pragma 像編譯器發送特殊的命令
+
+```
+
+<br>
+<br>
+<br>
+
+
+
+
+
+
+
+<br>
+<br>
+<br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
