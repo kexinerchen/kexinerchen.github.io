@@ -147,7 +147,7 @@ size_t fwrite(const void *ptr, size_t size_of_elements,
 <br>
 
 ## 預處理器
-c預處理器是個文本替換工具,在實際編譯之前進行. 所有的預處理器命令都以<span style="color:#ff8000"> # <span> 開頭
+c預處理器是個文本替換工具,在實際編譯之前進行. 所有的預處理器命令都以<span style="color:#ff8000"> # </span> 開頭
 ```c
 #define     \\定義宏
 #include    \\包含源代碼文件
