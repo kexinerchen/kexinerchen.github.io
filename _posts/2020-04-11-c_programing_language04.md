@@ -238,7 +238,7 @@ token34 = 40
 printf ("token34 = %d", token34);
 ```
 
-defined()運算符
+defined() 運算符
 ```c
 #include <stdio.h>
 
@@ -258,7 +258,7 @@ int main(void)
 ```c
 #define square(x) ((x) * (x))
 ```
-``c
+```c
 #include <stdio.h>
 
 #define MAX(x,y) ((x) > (y) ? (x) : (y))
