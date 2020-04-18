@@ -69,7 +69,7 @@ int  main()
 ## 排序
 
 ### 冒泡(Bubble Sort)
-![Bubble sort](./assets/Bubble_sort_animation.gif)
+![Bubble sort](https://raw.githubusercontent.com/kexinerchen/kexinerchen.github.io/master/_posts/assets/Bubble_sort_animation.gif)
 ```c
 #include <stdio.h>
 void bubble_sort(int arr[], int len) {
@@ -97,7 +97,7 @@ int main() {
 <br>
 
 ### 選擇(Selection Sort)
-![Selection Sort](./assets/Selection_sort_animation.gif)
+![Selection Sort](https://raw.githubusercontent.com/kexinerchen/kexinerchen.github.io/master/_posts/assets/Selection_sort_animation.gif)
 ```c
 void swap(int *a,int *b) //交換兩個變數
 {
@@ -124,7 +124,7 @@ void selection_sort(int arr[], int len)
 <br>
 
 ### 插入(Insertion Sort)
-![Insertion Sort](./assets/Insertion_sort_animation.gif)
+![Insertion Sort](https://raw.githubusercontent.com/kexinerchen/kexinerchen.github.io/master/_posts/assets/Insertion_sort_animation.gif)
 ```c
 void insertion_sort(int arr[], int len){
     int i,j,temp;
@@ -141,7 +141,7 @@ void insertion_sort(int arr[], int len){
 <br>
 
 ### 希爾排序
-![希爾](./assets/Sorting_shellsort_anim.gif)
+![希爾](https://raw.githubusercontent.com/kexinerchen/kexinerchen.github.io/master/_posts/assets/Sorting_shellsort_anim.gif)
 ```c
 void shell_sort(int arr[], int len) {
     int gap, i, j;
@@ -160,7 +160,7 @@ void shell_sort(int arr[], int len) {
 <br>
 
 ### 歸併
-![歸併](./assets/Merge_sort_animation2.gif)
+![歸併](https://raw.githubusercontent.com/kexinerchen/kexinerchen.github.io/master/_posts/assets/Merge_sort_animation2.gif)
 
 迭代法
 ```c
@@ -230,7 +230,7 @@ void merge_sort(int arr[], const int len) {
 
 <br>
 
-![歸併](./assets/Sorting_quicksort_anim.gif)
+![歸併](https://raw.githubusercontent.com/kexinerchen/kexinerchen.github.io/master/_posts/assets/Sorting_quicksort_anim.gif)
 
 迭代法
 ```c
