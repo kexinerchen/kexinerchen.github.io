@@ -22,15 +22,15 @@ author: Kexiner
 
 - [文件讀寫, 預處理器,類型轉換,錯誤處理,內存管理](https://kexinerchen.github.io/2020/04/11/c_programing_language04.html)
 
-- [算法]((https://kexinerchen.github.io/2020/04/11/c_programing_language05.html))
+<br>
+
+- [算法](https://kexinerchen.github.io/2020/04/11/c_programing_language05.html)
 
 
 <br>
 <br>
 <br>
 <br>
-<br>
-
 
 
 
