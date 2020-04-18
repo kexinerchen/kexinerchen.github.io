@@ -31,6 +31,23 @@ Lvalues和Rvalues: 變量是Lvalues,數值型的字面值是Rvalues,不能出現
 
 定義常量: 預處理器(#define a 100),      const關鍵字(const int a=10)        typeof返回類型
 
+printf輸出時,double和float都可以用%f, double還可以用%lf
+
+scanf輸入時, double必須用%lf,float必須用%f
+
+<br>
+
+```c
+#include <stdio.h>
+
+int main(){
+    printf("len of float: %lu \n", sizeof(float));
+    printf("len of double: %lu \n", sizeof(double));
+
+    return 0;
+}
+```
+
 <br>
 <br>
 

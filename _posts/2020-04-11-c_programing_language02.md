@@ -287,3 +287,106 @@ int (*pfun)(int, int);
 <br>
 <br>
 
+## 可變參數
+```c
+#include <stdio.h>
+#include <stdarg.h>
+
+double average(int num, ...)
+{
+//需要stdarg.h頭文件
+//num是可變參數的個數
+    
+    va_list valist;     //定義va_list類型變量
+    double sum = 0.0;
+    int i;
+ 
+    va_start(valist, num);      //va_start初始化所有參數
+    for (i = 0; i < num; i++)
+    {
+       sum += va_arg(valist, int);  //va_arg訪問va_list裏的所有參數
+    }
+    va_end(valist);     //va_end清理va_list
+ 
+    return sum/num;
+}
+ 
+int main()
+{
+    printf("Average of 2, 3, 4, 5 = %f\n", average(4, 2,3,4,5));
+    printf("Average of 5, 10, 15 = %f\n", average(3, 5,10,15));
+    return 0; 
+}
+
+out:
+Average of 2, 3, 4, 5 = 3.500000
+Average of 5, 10, 15 = 10.000000
+
+```
+
+<br>
+<br>
+<br>
+
+## 內存管理
+```c
+在頭文件<stdlib.h>中:
+void *calloc(int num, int size);
+//在內存中動態的分配num個長度爲size的連續空間,並初始化爲0
+
+void free(void *address); 
+//釋放address指向的內存塊
+
+void *malloc(int num); 
+//分派一塊指定大小的內存空間,未初始化
+
+void *realloc(void *address, int newsize); 
+//重新分派內存大小
+
+```
+void \*類型表示未確定類型的指針, C規定void \*類型可以轉換爲任何其他的類型
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main()
+{
+   char name[100];
+   char *description;
+ 
+   strcpy(name, "Zara Ali");
+ 
+   description = (char *)malloc( 200 * sizeof(char) );
+   if( description == NULL )
+   {
+      fprintf(stderr, "Error - unable to allocate required memory\n");
+   }
+   else
+   {
+      strcpy( description, "Zara ali a DPS student in class 10th");
+   }
+   printf("Name = %s\n", name );
+   printf("Description: %s\n", description );
+}
+
+out:
+Name = Zara Ali
+Description: Zara ali a DPS student in class 10th
+
+```
+
+
+<br>
+<br>
+<br>
+
+
+
+
+
+
+
+
+
