@@ -21,6 +21,6 @@
 <br>
 <br>
 
-<span style="color:#c4c4c4"; font-size:12pt> Email：kexinerchen@gmail.com </span>
+<span style="color:#c4c4c4; font-size:12pt"> Email：kexinerchen@gmail.com </span>
 
 <br>
