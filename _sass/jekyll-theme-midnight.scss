@@ -30,8 +30,15 @@ h1, h2, h3 {
 }
 
 h1 {
+  color:#696969;
   font-size:28px;
+  font-weight:400;
+
+  &:hover {
+    color: #bbbbbb;
+  }
 }
+
 
 h2 {
   font-size: 24px;
@@ -46,12 +53,12 @@ h3 {
 }
 
 a {
-  color:#959595;
+  color:#ff8000;
   font-weight:400;
   text-decoration:none;
 
   &:hover {
-    color: #c7c7c7;
+    color: #ffaa00;
   }
 }
 

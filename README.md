@@ -10,13 +10,13 @@
 
 - [The Big Questions](_posts/2020-04-15-big_questions.md)
 
-### [git](_posts/2020-04-11-git.md)
+- [git](_posts/2020-04-11-git.md)
 
-#### [gdb](_posts/2020-04-11-gdb.md)
+- [gdb](_posts/2020-04-11-gdb.md)
 
-##### [Logics](_posts/2020-07-31-logics.md)
+- [Logics](_posts/2020-07-31-logics.md)
 
-###### [examples](_posts/2020-04-11-examples.md)
+- [examples](_posts/2020-04-11-examples.md)
 
 
 <br>
