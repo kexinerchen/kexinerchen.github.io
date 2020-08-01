@@ -20,7 +20,7 @@
       <section>
         <div id="title">
           <h1 href="https://kexinerchen.github.io/"> {{site.title}} </h1>
-          <p>{{ site.description }}</p>
+          <p>{{ site.description | default: site.github.project_tagline }}</p>
           <hr>
           
           <!--
