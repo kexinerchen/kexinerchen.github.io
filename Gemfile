@@ -1,5 +1,10 @@
 # frozen_string_literal: true
 
-source 'https://rubygems.org'
+#source 'https://rubygems.org'
 
-gemspec
+#gemspec
+
+gem "jekyll-readme-index"
+gem 'jekyll-default-layout'
+
+
