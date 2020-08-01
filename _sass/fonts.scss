@@ -1,44 +1,15 @@
 @font-face {
-    font-family: 'HanYiXiYuanJian';
-    src: url('../fonts/HanYiXiYuanJian-1.ttf') format('truetype'),
-    font-weight: normal;
-    font-style: normal;
+  font-family: "HanYiXiYuanFan";
+  src: url("./fonts/HanYiXiYuanFan-1.eot"); /* IE9 Compat Modes */
+  src: url("./fonts/HanYiXiYuanFan-1.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("./fonts/HanYiXiYuanFan-1.otf") format("opentype"), /* Open Type Font */
+    url("./fonts/HanYiXiYuanFan-1.svg") format("svg"), /* Legacy iOS */
+    url("./fonts/HanYiXiYuanFan-1.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("./fonts/HanYiXiYuanFan-1.woff") format("woff"), /* Modern Browsers */
+    url("./fonts/HanYiXiYuanFan-1.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
 }
-
-@font-face {
-    font-family: 'HanYiXiYuanFan';
-    src: url('../fonts/HanYiXiYuanFan-1.ttf') format('truetype'),
-    font-weight: normal;
-    font-style: normal;
-}
-
-
-
-@font-face {
-    font-family: 'TaiWanXinXiMingTi';
-    src: url('../fonts/TaiWanXinXiMingTi.ttf') format('truetype'),
-    font-weight: normal;
-    font-style: normal;
-}
-
-
-
-@font-face {
-    font-family: 'HanYiXiZhongYuanJian';
-    src: url('../fonts/HanYiXiZhongYuanJian-1.ttf') format('truetype'),
-    font-weight: normal;
-    font-style: normal;
-}
-
-
-
-@font-face {
-    font-family: 'HanYiXiZhongYuanFan';
-    src: url('../fonts/HanYiXiZhongYuanFan-1.ttf') format('truetype'),
-    font-weight: normal;
-    font-style: normal;
-}
-
 
 
 
