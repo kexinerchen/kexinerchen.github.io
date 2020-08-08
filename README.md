@@ -16,6 +16,10 @@
 
 - [Logics](_posts/2020-07-31-logics.md)
 
+- [tea](_posts/2020-08-08-tea.md)
+
+
+
 - [examples](_posts/2020-04-11-examples.md)
 
 
