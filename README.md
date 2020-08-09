@@ -14,7 +14,7 @@
 
 - [gdb](_posts/2020-04-11-gdb.md)
 
-- [Logics](_posts/2020-07-31-logics.md)
+- [logics](_posts/2020-07-31-logics.md)
 
 - [tea](_posts/2020-08-08-tea.md)
 
