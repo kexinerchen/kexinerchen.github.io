@@ -18,7 +18,7 @@
 
 - [tea](_posts/2020-08-08-tea.md)
 
-
+- [YiJing](_posts/2020-09-07-yijing.md)
 
 - [examples](_posts/2020-04-11-examples.md)
 
