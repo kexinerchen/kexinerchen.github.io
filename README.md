@@ -20,6 +20,8 @@
 
 - [YiJing](_posts/2020-09-07-yijing.md)
 
+- [Food](_posts/2020-09-11.food.md)
+
 - [examples](_posts/2020-04-11-examples.md)
 
 
