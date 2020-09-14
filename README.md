@@ -18,7 +18,7 @@
 
 - [YiJing](_posts/2020-09-07-yijing.md)
 
-- [diet](_posts/2020-09-11-food.md)
+- [diet](_posts/2020-09-11-diet.md)
 
 - [tea](_posts/2020-08-08-tea.md)
 
