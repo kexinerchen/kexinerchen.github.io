@@ -24,6 +24,8 @@
 
 - [coffee](_posts/2020-09-12-coffee.md)
 
+- [wine](_posts/2020-12-24-wine.md)
+
 - [examples](_posts/2020-04-11-examples.md)
 
 
