@@ -5,7 +5,7 @@
 <br>
 <br>
 
-&nbsp;&nbsp;&nbsp; - [willpower](_posts/2021-11-21-willpower.md)
+<center> - [willpower](_posts/2021-11-21-willpower.md) </center>
 
 &nbsp; - [wine](_posts/2020-12-24-wine.md)
 
