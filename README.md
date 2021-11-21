@@ -7,13 +7,15 @@
 
 &nbsp; - [willpower](_posts/2021-11-21-willpower.md)
 
-&nbsp；&nbsp；&nbsp；&nbsp；&nbsp；&nbsp；&nbsp; - [wine](_posts/2020-12-24-wine.md)
+- [wine](_posts/2020-12-24-wine.md){: style="color:gray; font-size: 80%; text-align: center;"}
+
 
 &emsp; - [coffee](_posts/2020-09-12-coffee.md)
 
 - [tea](_posts/2020-08-08-tea.md)
 
-- [diet](_posts/2020-09-11-diet.md)
+- [diet](_posts/2020-09-11-diet.md) {: style="color:gray; font-size: 80%; text-align: center;"}
+
 
 - [YiJing](_posts/2020-09-07-yijing.md)
 
