@@ -36,7 +36,12 @@ author: Kexiner
 
 
 <font size=80%>我是尺寸80%</font>
-<font size=10>我是尺寸10</font>
+<font size=2>我是尺寸2</font>
+<font size=3>我是尺寸3</font>
+<font size=2.5>我是尺寸2.5</font>
+<font size=3.5>我是尺寸3.5</font>
+<font size=4>我是尺寸4</font>
+<font size=4.5>我是尺寸4.5</font>
 
 - 原地不動，安靜坐好。
 坐在椅子上，雙腳平放在地上，或盤腿坐在墊子上。背挺直，雙手放在膝蓋上。冥想時一定不能煩躁，這是自控力的基本保證。
