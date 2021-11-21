@@ -5,17 +5,15 @@
 <br>
 <br>
 
-&nbsp; - [willpower](_posts/2021-11-21-willpower.md)
+- [willpower](_posts/2021-11-21-willpower.md)
 
-- [wine](_posts/2020-12-24-wine.md){: style="color:gray; font-size: 80%; text-align: center;"}
+- [wine](_posts/2020-12-24-wine.md)
 
-
-&emsp; - [coffee](_posts/2020-09-12-coffee.md)
+- [coffee](_posts/2020-09-12-coffee.md)
 
 - [tea](_posts/2020-08-08-tea.md)
 
-- [diet](_posts/2020-09-11-diet.md) {: style="color:gray; font-size: 80%; text-align: center;"}
-
+- [diet](_posts/2020-09-11-diet.md)
 
 - [YiJing](_posts/2020-09-07-yijing.md)
 
